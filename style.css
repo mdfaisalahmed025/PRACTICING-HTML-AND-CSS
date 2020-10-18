@@ -1,0 +1,116 @@
+*{
+	margin: 0;
+	padding:0;
+}
+body{
+
+	background-color:#F7F8FA;
+	font-family: 'Roboto', sans-serif;
+}
+.container{
+	max-width: 1000px;
+	background-color:#FFFFFF;
+	margin: 0 auto;
+	padding:10px;
+	
+}
+
+.header{
+
+}
+.profile{
+	width:140px;
+	height:150px;
+	border:3px green solid;
+	border-radius:50%;
+	float: left;
+}
+.header-bio{
+	float: left;
+	padding:30px;
+}
+h1,h2,h3,h4,h5,h6{
+	color:#199999;
+}
+.header-contact{
+	float: right;
+	padding:30px;
+
+
+}
+.header-contact a{
+	text-decoration: none;
+	font-weight: bold;
+	color:#353345;
+}
+.header-contact a:hover{
+	text-decoration:underline;
+	color: green;
+	cursor: pointer;
+}
+
+.clear-div{
+	clear: both;
+}
+hr{
+	border:5px green solid;
+	border-bottom: none;
+	margin: 20px auto;
+	width: 100%;
+}
+
+.personal-section{
+
+}
+.content{
+
+}
+.left{
+	width:30%;
+	float: left;
+
+}
+.right{
+	width: 70%;
+	float: right;
+
+}
+.common-hr{
+	border:3px blue solid;
+	border-bottom: none;
+	margin: 20px auto;
+	width: 100%;
+
+}
+.left-template{
+	width: 45%;
+	float:left;
+
+}
+.right-template{
+	width: 45%;
+	float: right;
+}
+.bottom-container{
+	background-color:black;
+	text-align: center;
+	padding: 10px;
+	height:80px;
+	width: 100%;
+}
+.bottom-container li{
+	float: left;
+	padding:10px;
+
+}
+.bottom-container a{
+	color: white;
+	text-decoration:none;
+	margin top:20px;
+}
+.bottom-container p{
+	color: white;
+	margin-top: 20px;
+	float:right;
+}
+
