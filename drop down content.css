@@ -1,0 +1,253 @@
+*{
+	margin:0;
+	padding:0;
+	box-sizing: border-box;
+}
+body{
+	background-color:#FAFAFA;
+}
+
+.navbar{
+	background-color: green;
+	padding:1% 7%;
+	margin:10px 20px;
+	text-align:center;
+
+}
+
+.navbar a {
+	text-decoration:none;
+	padding:10px;
+	margin:5px;
+	font-size:20px;
+	color:white;
+	text-align:center;
+
+}
+.dropdown-container{
+	display: inline;
+	position:relative;
+}
+.dropdown-content{
+	position:absolute;
+	top:30px;
+	right:0px;
+	color:white;
+	text-align:left;
+	background-color:green;
+	min-width:100px;
+	display:none;
+}
+.dropdown-content a{
+	display:block;
+
+}
+.dropdown-content a:hover{
+	background-color:#943479;
+
+
+}
+.dropdown-container:hover .dropdown-content{
+	display:block;
+	transition:0.3s;
+}
+.clear{
+	clear:both;
+}
+.centering{
+	width:70%;
+	padding:10%;
+	background-color:#f54678;
+	margin: 0 auto;
+	text-align:center;
+
+}
+#text{
+	top:30%;
+	color:white;
+	background-color:blue;
+	padding:20px;
+	width:40%;
+	height:300px;
+	margin: 0 auto;
+	text-align: center;
+	transition-duration:width;
+	transition-duration:.5s;
+	transition-delay:0.3s;
+
+	transition: height 2s height 3s transform 2s;
+
+}
+
+#text:hover{
+	background-color: gray;
+	width:500px;
+	height:500px;
+	transform:rotate(360deg);
+	
+}
+
+.animatted-bar{
+	width:70%;
+	padding:10%;
+	background-color:white;
+	margin: 0 auto;
+	text-align:left;
+
+}
+
+.animatted-bar li{
+	list-style-type: none;
+	margin:50px 0;
+	font-weight:bold;
+	text-transform:uppercase;
+	position:relative;
+}
+.animatted-bar li::before{
+	content: "";
+	position:absolute;
+	top:calc(100% + 5px);
+	left:0;
+
+	background-color:rgb(170,160,172);
+	width:100%;
+	height:25px;
+	border-radius:100px;
+
+}
+
+
+.animatted-bar li::after{
+	content: "";
+	position:absolute;
+	top:calc(100% + 5px);
+	left:0;
+
+	
+	background-color:rgb(249,249.250);
+	width:0;
+	height:25px;
+	border-radius:100px;
+
+    animation-duration:3s;
+	animation-timing-function:linear;
+	animation-delay:2s;
+	animation-iteration-count:3;
+	animation-direction:forward;
+	animation-fill-mode: forwards;
+
+}
+
+.animatted-bar li.html::after{
+	animation-name:html;
+
+}
+
+@keyframes html{
+	to{
+		width:70%;
+		background-color: blue;
+	}
+}
+
+.animatted-bar li.js::after{
+	animation-name:js;
+
+}
+
+@keyframes js{
+	to{
+		width:90%;
+		background-color: red;
+	}
+}
+
+.animatted-bar li.css::after{
+	animation-name:css;
+
+}
+
+@keyframes css{
+	to{
+		width:80%;
+		background-color:green;
+	}
+}
+
+.animatted-bar li.python::after{
+	animation-name:python;
+
+}
+
+@keyframes python{
+	to{
+		width:20%;
+		background-color: orange;
+	}
+}
+
+.animatted-bar li.c::after{
+	animation-name:c;
+
+}
+
+@keyframes c{
+	to{
+		width:90%;
+		background-color:yellow;
+	}
+}
+
+.animatted-bar li.php::after{
+	animation-name:php;
+
+}
+
+@keyframes php{
+	to{
+		width:50%;
+		background-color:black;
+	}
+}
+
+.animatted-bar li.java::after{
+	animation-name:java;
+
+}
+
+@keyframes java{
+	to{
+		width:60%;
+		background-color:red;
+	}
+}
+.list-style {
+	width:70%;
+	padding:10%;
+	background-color:blue;
+	margin: 0 auto;
+	text-align:left;
+
+
+}
+
+.list-style ul{
+	list-style-type: none;
+	list-style-position: inside;
+	list-style-image:url("images/tick.png");
+}
+.list-style li{
+	font-size:20px;
+	color:white;
+}
+.list-style li:: before{
+	content:'\f058';
+	font font-family: 'Font Awesome 5 free';
+	font-weight: bold;
+	display: inline-block;
+	color: red;
+
+	margin:10px 5px;
+	font size:normal;
+
+}
